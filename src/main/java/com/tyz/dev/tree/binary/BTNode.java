@@ -21,6 +21,9 @@ public class BTNode<T> {
         this.data = data;
     }
 
+    public boolean isLeaf(){
+        return left == null && right == null;
+    }
 
     public static List<BTNode<Integer>> createBinTree() {
         List<BTNode<Integer>> nodeList = new ArrayList<>();
